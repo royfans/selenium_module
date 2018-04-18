@@ -1,0 +1,55 @@
+#8种元素定位方法
+find_element_by_id()
+find_element_by_name()
+find_element_by_class_name()
+find_element_by_link_text()
+find_element_by_partial_text()
+find_element_by_tag_name()
+find_element_by_xpath()
+find_element_by_css_selector()
+#xpath定位
+find_selement_by_xapth('//*[@id="word"]')
+find_element_by_xpath('//*[@id="word"]').send_keys('ipad')
+#css定位
+find_element_by_css_selector('.text')  #.--->calss
+find_element_by_css_selector('[class=text]')
+find_element_by_css_selector('#word')
+find_element_by_css_selector('[id=word]')
+input id="word" class="text" type="text" value="输入关键字..." autocomplete="off" name="word">
+'''
+'''
+#浏览器操作函数
+driver = webdriver.Firefox()      #启动浏览器
+driver.maximize_window()         #最大化浏览器
+driver.back()                   #后退
+driver.forward()              #前进
+driver.quit()                #关闭释放浏览器
+driver.close()               #关闭浏览器
+
+driver.refresh()             #刷新浏览器
+driver.get(url)             #访问目标网址
+time.sleep(4)              #前提导入-----impoet time
+
+注：
+1、quit更注重浏览器进程、线程资源的释放，close只关闭界面，不释放资源
+2、URL必须用http开头
+'''
+'''
+#操作方法
+click()     #点击--强调事件的独立性
+send_keys('xxx')   #在输入框内输入xxx
+clear()           #清空目标对象上的内容
+submit()          #提交--强调对表单内容的提交
+text             #获取目标对象上的文本信息
+size()          #获取目标框的尺寸
+size = driver.find_element_by_id().size()
+print size
+get_attribute(name) #获取属性值（一个属性id，的文本的值）
+location 获取元素坐标，先找到要获取的元素，再调用该方法
+page_source 返回页面源码
+driver.title 返回页面标题
+current_url 获取当前页面的URL
+is_displayed() 设置该元素是否可见
+is_enabled() 判断元素是否被使用
+is_selected() 判断元素是否被选中
+tag_name 返回元素的tagName
