@@ -8,7 +8,7 @@
 * report层: 存放程序运行生成的html格式报告
 * screenshot: 存放测试用到的图片以及测试时用例失败截图
 * src:源码层
-* common层: 框架级公用方法库
+  * common层: 框架级公用方法库
     * chche.py: 缓存
     * confparser.py: 配置文件解析器,读取配置文件数据类
     * dbsever.py: 数据库操作公用类
@@ -28,4 +28,4 @@
         ...
       * runner层: 测试套件层,执行器，组织的测试套件suite，生成html格式测试报告
       * testrunner.py: 各种加载测试用例的方法封装，以及生成报告
-* run.py: 执行器，整个框架运行该文件即可
+  * run.py: 执行器，整个框架运行该文件即可
