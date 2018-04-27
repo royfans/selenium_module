@@ -1,7 +1,6 @@
 # coding=utf-8
 
-from selenium import webdriver
-from .baseaction import Baseaction
+from src.functions.public.baseaction import Baseaction
 class HomePage(Baseaction):
 
     def current_user(self):
