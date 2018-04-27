@@ -17,8 +17,8 @@ def all_test():
     fq = open(filename, 'wb')
     runner = HTMLTestRunner.HTMLTestRunner(
         stream=fq,
-        title='雷池综合管理系统测试报告',
-        description='登录、创建用户和组、授权相关功能测试报告')
+        title='xxx综合管理系统测试报告',
+        description='登录功能测试报告')
     # runner = unittest.TextTestRunner()
     runner.run(discover)
     fq.close()
